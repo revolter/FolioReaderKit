@@ -170,6 +170,10 @@ open class FolioReader: NSObject {
         }
     }
 
+	open class func parseEpub(_ epubPath: String, removeEpub: Bool = true) {
+		FREpubParser().readEpub(epubPath: epubPath, removeEpub: removeEpub)
+	}
+
     // MARK: - Get Cover Image
     
     /**
